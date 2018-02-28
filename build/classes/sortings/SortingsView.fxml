@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sortings.SortingsViewController">
+   <children>
+      <Label layoutX="36.0" layoutY="567.0" prefHeight="47.0" prefWidth="203.0" text="Algorithm">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="algorithm" layoutX="161.0" layoutY="577.0" prefHeight="31.0" prefWidth="178.0" />
+      <Label layoutX="369.0" layoutY="566.0" prefHeight="47.0" prefWidth="203.0" text="Array Size">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Slider fx:id="slidingBar" blockIncrement="1.0" layoutX="489.0" layoutY="567.0" max="127.0" min="30.0" onDragDetected="#arraySizeSlider_ValueChanged" prefHeight="50.0" prefWidth="334.0" />
+      <Label fx:id="arraySize" layoutX="830.0" layoutY="567.0" prefHeight="47.0" prefWidth="59.0" text="30" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="sortBtn" layoutX="898.0" layoutY="570.0" mnemonicParsing="false" onAction="#sortBtn_Click" prefHeight="7.0" prefWidth="89.0" text="Sort">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetBtn" layoutX="1016.0" layoutY="570.0" mnemonicParsing="false" onAction="#resetBtn_Click" prefHeight="7.0" prefWidth="89.0" text="Reset">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Pane fx:id="view" layoutX="21.0" layoutY="20.0" prefHeight="545.0" prefWidth="1103.0" />
+   </children>
+</Pane>
